@@ -23,6 +23,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 .container {
   max-width: 320px;
   padding-left: 16px;
@@ -85,7 +86,17 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
+.menu-btn {
+  display: block;
+  background: transparent;
+  padding: 0;
+  border: none;
+  fill: #2e2f42;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -122,9 +133,11 @@ img {
 .nav-link:focus {
   color: #404bbf;
 }
+
 .nav-list {
   display: flex;
   gap: 40px;
+  display: none;
 }
 
 .logo {
@@ -137,13 +150,17 @@ img {
   color: #4d5ae5;
   margin-right: 76px;
 }
+
 .logo-part {
   color: #2e2f42;
 }
+
 .address {
   font-style: normal;
   margin-left: auto;
+  display: none;
 }
+
 .contacts {
   display: flex;
   gap: 40px;
@@ -224,7 +241,9 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .team {
@@ -810,6 +829,7 @@ img {
   .features-list {
     gap: 72px 24px;
   }
+
   .features-item {
     width: calc((100% - 24px) / 2);
   }
@@ -820,5 +840,44 @@ img {
 
   .features-text {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .features-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+  }
+
+  .features-list {
+    gap: 120px 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .features-text {
+    text-align: left;
+    font-weight: 400;
   }
 }
