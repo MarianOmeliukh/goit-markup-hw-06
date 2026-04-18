@@ -869,14 +869,6 @@ button {
       url("../images/tab-hero-bg-1x.jpg");
   }
 
-  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/tab-hero-bg-2x.jpg");
-    }
-  }
-
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -900,6 +892,14 @@ button {
 
   .features-text {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/tab-hero-bg-2x.jpg");
   }
 }
 
@@ -938,13 +938,6 @@ button {
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero-descktop-1x.jpg");
   }
-  @media screen and (min-resolution: 192dpi) {
-    .hero {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/hero-descktop-2x.jpg");
-    }
-  }
 
   .hero-title {
     margin-bottom: 48px;
@@ -981,5 +974,13 @@ button {
   .features-text {
     text-align: left;
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-descktop-2x.jpg");
   }
 }
