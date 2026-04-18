@@ -35,19 +35,6 @@ button {
   margin: 0 auto;
 }
 
-/* .hero {
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/photo11.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 188px 0;
-} */
-
 .hero {
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -71,12 +58,12 @@ button {
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
-  margin: 0 auto 48px;
+  max-width: 216px;
+  margin: 0 auto 72px;
 }
 
 .hero-button {
@@ -86,7 +73,7 @@ button {
   border: none;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  cursor: pointer;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -890,6 +877,13 @@ button {
     }
   }
 
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
   /* features */
 
   .features-list {
@@ -950,6 +944,10 @@ button {
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/hero-descktop-2x.jpg");
     }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
   }
 
   /* Feature section */
