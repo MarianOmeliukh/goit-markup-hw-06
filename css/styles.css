@@ -48,13 +48,13 @@ button {
   padding: 72px 0;
 }
 
-@media (min-resolution: 192dpi) {
+/* @media (min-resolution: 192dpi) {
   .hero {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/mob-hero-bg-2x.jpg);
   }
-}
+} */
 
 .hero-title {
   font-weight: 700;
@@ -217,16 +217,23 @@ button {
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  width: calc((100% - 24px * 3) / 4);
+
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.team-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-social-list {
@@ -265,6 +272,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -893,6 +901,22 @@ button {
   .features-text {
     text-align: left;
   }
+
+  /* Our Team section */
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .container {
+    max-width: 584px;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -974,6 +998,20 @@ button {
   .features-text {
     text-align: left;
     font-weight: 400;
+  }
+
+  /* Our Team section */
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .container {
+    max-width: 1158px;
   }
 }
 
