@@ -183,7 +183,7 @@ button {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: left;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -307,6 +307,10 @@ button {
 }
 
 .portfolio-item {
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1098,7 +1102,7 @@ button {
     width: 264px;
   }
 
-  .mob-menu-section {
+  .mob-menu {
     display: none;
   }
 
@@ -1228,6 +1232,7 @@ button {
   }
 
   .portfolio-item {
+    box-shadow: none;
     flex-basis: calc((100% - 24px * 2) / 3);
   }
 
