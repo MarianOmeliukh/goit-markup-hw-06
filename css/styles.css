@@ -818,7 +818,7 @@ button {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -862,6 +862,7 @@ button {
 
 .menu-address {
   font-style: normal;
+  margin-bottom: 48px;
 }
 
 .mob-menu-link {
@@ -879,7 +880,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 16px;
 }
 
 .menu-link-tel {
